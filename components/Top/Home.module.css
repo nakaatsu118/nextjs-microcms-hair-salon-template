@@ -1,0 +1,10 @@
+.topContainer {
+  width: 100vw;
+  height: 550px;
+  overflow: hidden;
+}
+
+.topContainer img {
+  width: 100%;
+  height: auto;
+}
