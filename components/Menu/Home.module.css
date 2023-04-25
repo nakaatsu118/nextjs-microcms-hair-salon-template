@@ -1,0 +1,12 @@
+.menuContainer {
+  background-color: #b2a4ff;
+  color: #fff;
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+}
+
+.menuContent {
+  display: flex;
+  gap: 40px;
+}
