@@ -1,0 +1,35 @@
+.hairCatalogContainer {
+  background-color: #fff;
+  padding: 6rem;
+}
+
+.hairCatalogContent h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+}
+
+.hairCatalogContent p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 32px;
+}
+
+.hairCatalogImages {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hairCatalogImages img {
+  width: 20%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.hairCatalogImages img:hover {
+  opacity: 0.8;
+}
