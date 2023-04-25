@@ -1,0 +1,26 @@
+.aboutContainer {
+  background-color: #b2a4ff;
+  color: #fff;
+  padding: 6rem;
+}
+
+.aboutContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 40px;
+}
+
+.aboutContent img {
+  max-width: 50%;
+  box-shadow: 12px 12px 0 #ffb4b4;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
