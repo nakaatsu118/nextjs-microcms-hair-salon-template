@@ -6,7 +6,7 @@ export default function Header() {
     <section className={styles.headerContainer}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src={'logoipsum-289.svg'} alt="Logo" />
+          <img src={'logoipsum-283.svg'} alt="Logo" />
         </div>
       </div>
       <div className={styles.container}>
@@ -16,11 +16,11 @@ export default function Header() {
           <img src={'twitter.svg'} alt="Twitter" />
         </div>
         <ul className={styles.navLinks}>
-          <li className={styles.navLink}>About</li>
-          <li className={styles.navLink}>Hair Catalog</li>
-          <li className={styles.navLink}>Menu</li>
-          <li className={styles.navLink}>Staff</li>
-          <li className={styles.navLink}>News</li>
+          {/* <li className={styles.navLink}>ABOUT</li> */}
+          <li className={styles.navLink}>HAIR CATALOG</li>
+          <li className={styles.navLink}>MENU</li>
+          <li className={styles.navLink}>STAFF</li>
+          <li className={styles.navLink}>NEWS</li>
         </ul>
       </div>
     </section>

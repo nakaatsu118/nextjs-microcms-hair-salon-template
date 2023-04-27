@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 100vw;
-  padding: 1rem 4rem;
-  border-bottom: 1px #b2a4ff solid;
+  width: 100%;
+  padding: 0.8rem 4rem;
+  border-bottom: 8px #ffb4b4 solid;
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
+  z-index: 999;
 }
 .headerContainer .container:last-child {
   margin-left: auto;
@@ -28,8 +29,9 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
   overflow: hidden;
+  font-weight: bold;
+  color: #000;
 }
 
 .navLink:hover {
@@ -42,7 +44,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #ffb4b4;
   transform: scaleX(0);
   transform-origin: right;

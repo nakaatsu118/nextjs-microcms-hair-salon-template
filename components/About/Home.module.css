@@ -1,26 +1,48 @@
 .aboutContainer {
   background-color: #b2a4ff;
-  color: #fff;
-  padding: 6rem;
+  padding: 80px 0 240px;
+  display: flex;
+  gap: 40px;
+  width: 100%;
 }
 
 .aboutContainer h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  letter-spacing: 1.2px;
+  font-size: 10vw;
+  margin: 0 auto;
+  writing-mode: vertical-rl;
+  line-height: 0.85em;
 }
 
-.aboutContent {
-  display: flex;
-  gap: 40px;
+.aboutContainer h2 p {
+  margin: 0;
 }
 
-.aboutContent img {
-  max-width: 50%;
-  box-shadow: 12px 12px 0 #ffb4b4;
+.leftSection {
+  padding: 80px 0;
+  width: 76%;
+  position: relative;
+}
+
+.leftSection img {
+  width: 50vw;
+}
+
+.rightSection {
+  width: 24%;
 }
 
 .description {
-  font-size: 1rem;
+  position: absolute;
+  bottom: -120px;
+  left: 80px;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
   line-height: 1.5;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  background-color: #fff;
+  padding: 16px 32px;
+  width: 100%;
+}
+
+.description p span {
+  display: block;
 }

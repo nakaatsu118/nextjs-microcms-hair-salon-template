@@ -1,12 +1,46 @@
 .menuContainer {
-  background-color: #b2a4ff;
-  color: #fff;
-  padding: 4rem;
   width: 100%;
   display: flex;
+  align-items: center;
+}
+
+.menuContainer h2 {
+  font-size: 10vw;
+  margin: 0 auto;
+  writing-mode: vertical-rl;
+  line-height: 0.85em;
+}
+
+.menuContainer h2 p {
+  margin: 0;
+}
+
+.leftSection {
+  padding: 80px 0;
+  width: 76%;
+}
+
+.rightSection {
+  width: 24%;
 }
 
 .menuContent {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  max-width: 1180px;
+}
+
+.priceContainer {
+  display: flex;
+  width: 100%;
+}
+
+.priceContainer p {
+  flex: 1;
+  background-color: #fff;
+  padding: 24px;
+  margin: 0;
 }

@@ -1,35 +1,75 @@
 .hairCatalogContainer {
-  background-color: #fff;
-  padding: 6rem;
+  padding: 80px 0;
+  display: flex;
+  gap: 40px;
+  width: 100%;
 }
 
-.hairCatalogContent h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  letter-spacing: 1.2px;
+.leftSection {
+  width: 24%;
 }
 
-.hairCatalogContent p {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: lighter;
-  margin-bottom: 32px;
+.rightSection {
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hairCatalogContainer h2 {
+  font-size: 10vw;
+  margin: 0 auto;
+  writing-mode: vertical-rl;
+  line-height: 0.85em;
+}
+
+.hairCatalogContainer h2 p {
+  margin: 0;
 }
 
 .hairCatalogImages {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-.hairCatalogImages img {
-  width: 20%;
-  height: 200px;
+.imageContainer {
+  position: relative;
+  height: 400px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
-.hairCatalogImages img:hover {
+
+.imageContainer:hover {
   opacity: 0.8;
+}
+
+.hairDescription {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+  padding: 16px;
+  align-items: end;
+  gap: 16px;
+  font-size: 1.2rem;
+}
+
+.andMore {
+  margin-top: 48px;
+  color: #fff;
+  background-color: #000;
+  padding: 24px;
+  width: fit-content;
+  font-size: 1.8rem;
+  cursor: pointer;
 }

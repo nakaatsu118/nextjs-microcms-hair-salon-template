@@ -8,7 +8,15 @@ export default function Top() {
 
   return (
     <section className={styles.topContainer}>
-      <img src={imageName} alt="トップ画像" />
+      <div className={styles.textContainer}>
+        <h1>
+          <p>Olive</p>
+          <p>Hair Salon</p>
+        </h1>
+      </div>
+      <div className={styles.imgContainer}>
+        <img src={imageName} alt="トップ画像" />
+      </div>
     </section>
   );
 }

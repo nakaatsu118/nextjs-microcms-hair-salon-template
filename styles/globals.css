@@ -2,7 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Sora', sans-serif;
+  font-family: 'Sora', 'Zen Kaku Gothic New', sans-serif;
+  background-color: #b2a4ff;
+  width: 100%;
+  height: 100%;
 }
 
 a {

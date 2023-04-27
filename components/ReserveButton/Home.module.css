@@ -1,0 +1,21 @@
+.reserveButton {
+  cursor: pointer;
+}
+
+.reserveIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 14px;
+  background: #ffb4b4;
+  /* border-radius: 50%; */
+  text-align: center;
+}

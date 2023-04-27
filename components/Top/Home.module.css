@@ -1,10 +1,31 @@
 .topContainer {
-  width: 100vw;
-  height: 550px;
+  width: 100%;
+  display: flex;
+}
+
+.textContainer {
+  width: 25%;
+}
+
+.textContainer h1 {
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  font-size: 10vw;
+  font-weight: bold;
+  line-height: 0.85em;
+}
+
+.textContainer h1 p {
+  margin: 0;
   overflow: hidden;
 }
 
-.topContainer img {
+.imgContainer {
+  width: 75%;
+  /* overflow: hidden; */
+}
+
+.imgContainer img {
   width: 100%;
   height: auto;
 }
