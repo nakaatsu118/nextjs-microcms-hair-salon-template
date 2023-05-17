@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Header from '~/components/Header';
@@ -9,8 +9,15 @@ import Menu from '~/components/Menu';
 import ReserveButton from '~/components/ReserveButton';
 import Staff from '~/components/Staff';
 import Footer from '~/components/Footer';
+import { client } from '~/utils/microCMSClient';
+import { MenuType } from '~/types/menu';
+import { StaffType } from '~/types/staff';
 
-const Home: NextPage = () => {
+export interface Props {
+  menu: MenuType[];
+  staff: StaffType[];
+}
+const Home = ({ menu, staff }: Props): JSX.Element => {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,8 +31,8 @@ const Home: NextPage = () => {
         <Top />
         <About />
         <HairCatalog />
-        <Menu />
-        <Staff />
+        <Menu menu={menu} />
+        <Staff staff={staff} />
         <Footer />
         <ReserveButton />
       </main>
@@ -34,3 +41,15 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const menuData = await client.get({ endpoint: 'menu' });
+  const staffData = await client.get({ endpoint: 'staff' });
+
+  return {
+    props: {
+      menu: menuData.contents,
+      staff: staffData.contents,
+    },
+  };
+};

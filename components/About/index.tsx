@@ -9,7 +9,7 @@ export default function About() {
         <div className={styles.description}>
           <p>
             <span>
-              Olive
+              Simple
               HairSalonは、鮮やかでモダンな内装が特徴のおしゃれな美容室です。店内には、高品質な美容用品や機器が整然と並び、スタイリストたちは最新のトレンドに基づいたスタイリングやカラーリングを提供しています。
             </span>
             <span>

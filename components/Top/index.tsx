@@ -10,7 +10,7 @@ export default function Top() {
     <section className={styles.topContainer}>
       <div className={styles.textContainer}>
         <h1>
-          <p>Olive</p>
+          <p>Simple</p>
           <p>Hair Salon</p>
         </h1>
       </div>
