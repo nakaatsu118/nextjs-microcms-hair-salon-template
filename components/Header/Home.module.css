@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1rem;
   width: 100%;
-  padding: 0.8rem 4rem;
+  padding: 1.2rem 4rem;
   border-bottom: 8px #ffb4b4 solid;
   position: sticky;
   top: 0;
@@ -15,8 +15,8 @@
   margin-left: auto;
 }
 
-.logo {
-  width: 100px;
+.logo img {
+  width: 8vw;
 }
 
 .navLinks {
@@ -59,7 +59,7 @@
 .socialIcons {
   display: flex;
   list-style: none;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .socialIcons img {

@@ -17,11 +17,11 @@
 
 .leftSection {
   padding: 80px 0;
-  width: 76%;
+  width: 68%;
 }
 
 .rightSection {
-  width: 24%;
+  width: 32%;
 }
 
 .menuContent {
@@ -29,7 +29,6 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  font-size: clamp(1rem, 1.3vw, 1.3rem);
   max-width: 1180px;
 }
 
@@ -43,4 +42,20 @@
   background-color: #fff;
   padding: 24px;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .leftSection {
+    padding: 60px 0;
+    width: 76%;
+  }
+
+  .rightSection {
+    width: 24%;
+  }
+
+  .menuContent {
+    font-size: 3vw;
+    gap: 8px;
+  }
 }

@@ -61,7 +61,6 @@
   padding: 16px;
   align-items: end;
   gap: 16px;
-  font-size: 1.2rem;
 }
 
 .andMore {
@@ -72,4 +71,25 @@
   width: fit-content;
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .hairCatalogContainer {
+    gap: 16px;
+    padding: 40px 0;
+  }
+
+  .hairCatalogImages {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+
+  .hairDescription {
+    padding: 8px;
+    font-size: 3vw;
+  }
+
+  .imageContainer {
+    height: 320px;
+  }
 }

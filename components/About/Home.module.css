@@ -46,3 +46,18 @@
 .description p span {
   display: block;
 }
+
+@media screen and (max-width: 767px) {
+  .aboutContainer {
+    padding: 64px 0 180px;
+  }
+
+  .leftSection img {
+    width: 60vw;
+  }
+
+  .description {
+    font-size: 3vw;
+    padding: 8px 24px;
+  }
+}
