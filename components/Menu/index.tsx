@@ -8,7 +8,7 @@ export interface MenuProps {
 
 export default function Menu({ menu }: MenuProps) {
   return (
-    <section className={styles.menuContainer}>
+    <section id="menu" className={styles.menuContainer}>
       <div className={styles.leftSection}>
         <div className={styles.menuContent}>
           {menu ? (

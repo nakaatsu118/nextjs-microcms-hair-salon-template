@@ -8,7 +8,7 @@ export interface StaffProps {
 
 export default function Staff({ staff }: StaffProps) {
   return (
-    <section className={styles.staffContainer}>
+    <section id="staff" className={styles.staffContainer}>
       <div className={styles.leftSection}>
         <h2>
           <p>Staff</p>
