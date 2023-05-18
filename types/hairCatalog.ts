@@ -14,6 +14,7 @@ export interface HairCatalogType {
   image: Image;
   date: string;
   hairStyle: string;
+  comment?: string;
 }
 
 export interface Image {

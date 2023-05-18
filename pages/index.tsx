@@ -13,6 +13,7 @@ import { client } from '~/utils/microCMSClient';
 import { MenuType } from '~/types/menu';
 import { StaffType } from '~/types/staff';
 import { HairCatalogType } from '~/types/hairCatalog';
+import Access from '~/components/Access';
 
 export interface Props {
   menu: MenuType[];
@@ -35,6 +36,7 @@ const Home = ({ menu, staff, hairCatalog }: Props): JSX.Element => {
         <HairCatalog hairCatalog={hairCatalog} />
         <Menu menu={menu} />
         <Staff staff={staff} />
+        <Access />
         <Footer />
         <ReserveButton />
       </main>

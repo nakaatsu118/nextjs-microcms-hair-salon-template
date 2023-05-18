@@ -1,5 +1,5 @@
 .hairCatalogContainer {
-  padding: 80px 0;
+  padding-bottom: 80px;
   display: flex;
   gap: 40px;
   width: 100%;
@@ -88,10 +88,17 @@
   color: #000;
 }
 
+.modalDescription {
+  padding: 16px;
+}
+
+.modalImage {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .hairCatalogContainer {
     gap: 16px;
-    padding: 40px 0;
   }
 
   .hairCatalogImages {
@@ -106,5 +113,9 @@
 
   .imageContainer {
     height: 320px;
+  }
+
+  .modalDescription {
+    font-size: 3vw;
   }
 }

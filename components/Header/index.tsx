@@ -14,6 +14,7 @@ export default function Header() {
       </div>
       <div className={styles.container}>
         <div className={styles.socialIcons}>
+          {/* TODO: ソーシャルリンクを差し替える */}
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <img src={'instagram.svg'} alt="Instagram" />
           </a>
@@ -23,9 +24,6 @@ export default function Header() {
         </div>
         <ul className={styles.navLinks}>
           <li className={styles.navLink}>
-            <Link href="/">TOP</Link>
-          </li>
-          <li className={styles.navLink}>
             <a href="#hairCatalog">HAIR CATALOG</a>
           </li>
           <li className={styles.navLink}>
@@ -33,6 +31,9 @@ export default function Header() {
           </li>
           <li className={styles.navLink}>
             <a href="#staff">STAFF</a>
+          </li>
+          <li className={styles.navLink}>
+            <a href="#access">ACCESS</a>
           </li>
         </ul>
       </div>

@@ -1,6 +1,7 @@
 .topContainer {
   width: 100%;
   display: flex;
+  padding-bottom: 80px;
 }
 
 .textContainer {
@@ -18,6 +19,7 @@
 .textContainer h1 p {
   margin: 0;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .imgContainer {

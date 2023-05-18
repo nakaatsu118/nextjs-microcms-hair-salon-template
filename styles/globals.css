@@ -8,7 +8,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   scroll-behavior: smooth;
-  scroll-padding-top: 2.6rem;
+  scroll-padding-top: 100px;
 }
 
 @media screen and (max-width: 767px) {
@@ -25,4 +25,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }

@@ -17,4 +17,9 @@
   font-size: 14px;
   background: #ffb4b4;
   text-align: center;
+  transition: 0.8s;
+}
+
+.reserveButton:hover .reserveIcon {
+  transform: scale(1.2);
 }

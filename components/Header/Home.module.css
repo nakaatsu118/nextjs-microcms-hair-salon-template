@@ -10,6 +10,7 @@
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 999;
+  height: 100px;
 }
 .headerContainer .container:last-child {
   margin-left: auto;
