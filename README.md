@@ -4,6 +4,10 @@ microCMS を使用した、美容室風サイトのテンプレートです。
 
 ## プレビュー
 
+<img src="https://github.com/nakaatsu118/nextjs-microcms-hair-salon-template/assets/42927606/80b0afe0-08d5-4154-adfa-d5e7aa16edc0" width="480px">
+
+[https://nextjs-microcms-hair-salon-template.vercel.app/](https://nextjs-microcms-hair-salon-template.vercel.app/)
+
 ## 技術構成
 
 - Next.js
