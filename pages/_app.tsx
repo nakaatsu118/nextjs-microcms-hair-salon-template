@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps): BaseContext {
     TagManager.initialize({ gtmId: 'GTM-XXXXXX' });
   }, []);
 
+  {/* @ts-expect-error Server Component */}
   return <Component {...pageProps} />;
 }
 

@@ -20,7 +20,7 @@ export interface Props {
   staff: StaffType[];
   hairCatalog: HairCatalogType[];
 }
-const Home = ({ menu, staff, hairCatalog }: Props): JSX.Element => {
+const Home = ({ menu, staff, hairCatalog }: Props) => {
   return (
     <div className={styles.container}>
       {/* TODO: サイト公開の際はnoIndexを外す */}
