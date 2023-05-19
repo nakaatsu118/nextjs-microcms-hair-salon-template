@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const Meta = ({
   pageTitle,
@@ -11,10 +11,11 @@ const Meta = ({
   pageOgImage: string;
   noIndex?: boolean;
 }) => {
-  const defaultTitle = 'hoge';
+  // TODO: デフォルトのタイトル、ディスクリプション、OGP画像を設定する
+  const defaultTitle = 'Simple Hair Salon | microCMS Template';
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
-  const description = 'hoge';
-  const siteName = 'hoge';
+  const description = '美容室風のmicroCMSテンプレートです。';
+  const siteName = 'Simple Hair Salon | microCMS Template';
   const domain = 'www.hoge.com';
   const url = pageUrl ? `https://${domain}/${pageUrl}/` : `https://${domain}`;
   const ogImage = pageOgImage || `https://${domain}/common/og-image.png`;
@@ -44,7 +45,7 @@ const Meta = ({
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     </Head>
-  )
-}
+  );
+};
 
 export default Meta;

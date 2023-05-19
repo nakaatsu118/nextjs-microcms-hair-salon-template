@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps): BaseContext {
   useEffect(() => {
+    // TODO: GTMのIDを設定する
     TagManager.initialize({ gtmId: 'GTM-XXXXXX' });
   }, []);
 

@@ -7,6 +7,7 @@ export default function Header() {
     <section className={styles.headerContainer}>
       <div className={styles.container}>
         <Link href="/" passHref>
+          {/* TODO: ロゴ画像を差し替える */}
           <div className={styles.logo}>
             <img src={'logoipsum-283.svg'} alt="Logo" />
           </div>
