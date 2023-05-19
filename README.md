@@ -1,0 +1,30 @@
+# Simple Hair Salon | microCMS テンプレート
+
+microCMS を使用した、美容室風サイトのテンプレートです。
+
+## プレビュー
+
+## 技術構成
+
+- Next.js
+- TypeScript
+
+## 環境変数設定
+
+`.env.sample` ファイルをコピーして `.env.development.local` を作成し、以下の情報を入力してください。
+
+`NEXT_PUBLIC_SERVICE_DOMAIN=`
+
+microCMS 管理画面の URL `https://xxx.microcms.io/` の `xxx` を設定してください。
+
+`NEXT_PUBLIC_API_KEY=`
+
+microCMS 管理画面のサービス設定 -> API キー から GET 権限のある API キーをコピーして設定してください。
+
+## 開発手順
+
+1. `yarn` パッケージのインストール
+2. `yarn dev` 開発環境起動
+3. [http://localhost:3000](http://localhost:3000) 開発環境にアクセス
+
+`TODO:` でファイル内を検索すると、このテンプレートを理容する際に変更が必要な箇所が出てきます。
