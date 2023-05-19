@@ -52,15 +52,13 @@ export default function HairCatalog({ hairCatalog }: HairCatalogProps) {
         <div className={styles.hairCatalogImages}>
           {hairCatalog ? (
             hairCatalog.map((hairCatalog) => (
-              <>
-                <div className={styles.imageContainer} key={hairCatalog.id} onClick={() => openModal(hairCatalog)}>
-                  <img src={hairCatalog.image.url} alt={hairCatalog.hairStyle} />
-                  <p className={styles.hairDescription}>
-                    <span className={styles.date}>{dayjs(hairCatalog.date).format('YYYY.MM.DD')}</span>
-                    <span className={styles.name}>{hairCatalog.hairStyle}</span>
-                  </p>
-                </div>
-              </>
+              <div className={styles.imageContainer} key={hairCatalog.id} onClick={() => openModal(hairCatalog)}>
+                <img src={hairCatalog.image.url} alt={hairCatalog.hairStyle} />
+                <p className={styles.hairDescription}>
+                  <span className={styles.date}>{dayjs(hairCatalog.date).format('YYYY.MM.DD')}</span>
+                  <span className={styles.name}>{hairCatalog.hairStyle}</span>
+                </p>
+              </div>
             ))
           ) : (
             <>no hairCatalog</>
