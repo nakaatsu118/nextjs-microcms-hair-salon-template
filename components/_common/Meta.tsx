@@ -16,7 +16,7 @@ const Meta = ({
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = '美容室風のmicroCMSテンプレートです。';
   const siteName = 'Simple Hair Salon | microCMS Template';
-  const domain = 'www.hoge.com';
+  const domain = 'nextjs-microcms-hair-salon-template.vercel.app';
   const url = pageUrl ? `https://${domain}/${pageUrl}/` : `https://${domain}`;
   const ogImage = pageOgImage || `https://${domain}/common/og-image.png`;
 
