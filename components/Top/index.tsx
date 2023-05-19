@@ -11,7 +11,7 @@ export default function Top() {
         </h1>
       </div>
       <div className={styles.imgContainer}>
-        <img src="/topimage/top-1.jpg" alt="トップ画像" />
+        <img src="/topImage/top-1.jpg" alt="トップ画像" />
       </div>
     </section>
   );
