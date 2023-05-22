@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import { HairCatalogType } from '~/types/hairCatalog';
 import dayjs from 'dayjs';
 import Modal from 'react-modal';
+import Link from 'next/link';
 
 export interface HairCatalogProps {
   hairCatalog: HairCatalogType[];
@@ -75,7 +76,13 @@ export default function HairCatalog({ hairCatalog }: HairCatalogProps) {
             </div>
           )}
         </Modal>
-        {hairCatalog ? <div className={styles.andMore}>AND MORE</div> : <></>}
+        {hairCatalog ? (
+          <div className={styles.andMore}>
+            <Link href="/hairCatalog/1/">AND MORE</Link>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </section>
   );

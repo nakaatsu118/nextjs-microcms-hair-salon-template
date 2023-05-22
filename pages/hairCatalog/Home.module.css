@@ -1,0 +1,26 @@
+.hairCatalogContainer {
+  width: 100%;
+  min-height: 80vh;
+  padding-bottom: 80px;
+}
+
+.topSection h2 {
+  font-size: 8vw;
+  margin: 0 auto;
+  line-height: 0.85em;
+}
+
+.topSection p {
+  width: 80vw;
+  font-size: 1.8vw;
+}
+
+@media screen and (max-width: 767px) {
+  .topSection h2 {
+    font-size: 10vw;
+  }
+  .topSection p {
+    width: 90vw;
+    font-size: 3vw;
+  }
+}
