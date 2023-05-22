@@ -18,6 +18,7 @@
 
 .logo img {
   width: 8vw;
+  max-width: 64px;
 }
 
 .navLinks {
