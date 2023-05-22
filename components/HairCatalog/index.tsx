@@ -75,7 +75,7 @@ export default function HairCatalog({ hairCatalog }: HairCatalogProps) {
             </div>
           )}
         </Modal>
-        <div className={styles.andMore}>AND MORE</div>
+        {hairCatalog ? <div className={styles.andMore}>AND MORE</div> : <></>}
       </div>
     </section>
   );
