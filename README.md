@@ -27,8 +27,16 @@ microCMS 管理画面のサービス設定 -> API キー から GET 権限のあ
 
 ## 開発手順
 
-1. `yarn` パッケージのインストール
-2. `yarn dev` 開発環境起動
-3. [http://localhost:3000](http://localhost:3000) 開発環境にアクセス
+```shell
+# setup
+yarn install
+
+# run local
+yarn dev
+
+# build static page
+# /out
+yarn build
+```
 
 `TODO:` でファイル内を検索すると、このテンプレートを理容する際に変更が必要な箇所が出てきます。
