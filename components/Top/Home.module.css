@@ -1,5 +1,6 @@
 .topContainer {
   width: 100%;
+  max-height: 80vh;
   display: flex;
   padding-bottom: 80px;
 }
@@ -11,7 +12,7 @@
 .textContainer h1 {
   writing-mode: vertical-rl;
   margin: 0 auto;
-  font-size: 10vw;
+  font-size: min(10vw, 180px);
   font-weight: bold;
   line-height: 0.85em;
 }
@@ -24,6 +25,7 @@
 
 .imgContainer {
   width: 75%;
+  overflow: hidden;
 }
 
 .imgContainer img {
