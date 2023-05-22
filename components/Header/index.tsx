@@ -25,16 +25,16 @@ export default function Header() {
         </div>
         <ul className={styles.navLinks}>
           <li className={styles.navLink}>
-            <a href="#hairCatalog">HAIR CATALOG</a>
+            <Link href="/#hairCatalog">HAIR CATALOG</Link>
           </li>
           <li className={styles.navLink}>
-            <a href="#menu">MENU</a>
+            <Link href="/#menu">MENU</Link>
           </li>
           <li className={styles.navLink}>
-            <a href="#staff">STAFF</a>
+            <Link href="/#staff">STAFF</Link>
           </li>
           <li className={styles.navLink}>
-            <a href="#access">ACCESS</a>
+            <Link href="/#access">ACCESS</Link>
           </li>
         </ul>
       </div>
