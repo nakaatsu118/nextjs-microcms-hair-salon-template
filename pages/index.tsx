@@ -22,7 +22,7 @@ export interface Props {
 }
 const Home = ({ menu, staff, hairCatalog }: Props) => {
   return (
-    <div className={styles.container}>
+    <div>
       {/* TODO: サイト公開の際はnoIndexを外す */}
       <Meta pageTitle="" pageUrl="" pageOgImage="" noIndex />
       <main className={styles.main}>
