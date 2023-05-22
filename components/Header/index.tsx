@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/" passHref>
           {/* TODO: ロゴ画像を差し替える */}
           <div className={styles.logo}>
-            <img src={'logoipsum-283.svg'} alt="Logo" />
+            <img src={'/logoipsum-283.svg'} alt="Logo" />
           </div>
         </Link>
       </div>
@@ -17,10 +17,10 @@ export default function Header() {
         <div className={styles.socialIcons}>
           {/* TODO: ソーシャルリンクを差し替える */}
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <img src={'instagram.svg'} alt="Instagram" />
+            <img src={'/instagram.svg'} alt="Instagram" />
           </a>
           <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-            <img src={'twitter.svg'} alt="Twitter" />
+            <img src={'/twitter.svg'} alt="Twitter" />
           </a>
         </div>
         <ul className={styles.navLinks}>
