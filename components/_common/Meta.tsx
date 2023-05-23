@@ -39,7 +39,7 @@ const Meta = ({
       <meta name="twitter:image" content={ogImage} />
       <meta name="viewport" content="width=device-width" />
       <meta name="format-detection" content="telephone=no" />
-      <meta name="theme-color" content="#2e2e2e" />
+      <meta name="theme-color" content="#b2a4ff" />
       {/* noIndex === true の場合のみ noindex 有効化 */}
       {noIndex && <meta name="robots" content="noindex" />}
       <link rel="shortcut icon" href="/favicon.ico" />
