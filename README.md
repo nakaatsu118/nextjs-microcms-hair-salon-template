@@ -8,15 +8,6 @@ microCMS を使用した、美容室風サイトのテンプレートです。
 
 [https://nextjs-microcms-hair-salon-template.vercel.app/](https://nextjs-microcms-hair-salon-template.vercel.app/)
 
-## 技術構成
-
-- Next.js
-- TypeScript
-- CSS Modules
-- react-modal
-
-JavaScript によるアニメーション等は入れておらず、シンプルな構成としています。
-
 ## 環境変数設定
 
 `.env.sample` ファイルをコピーして `.env.development.local` を作成し、以下の情報を入力してください。
@@ -44,6 +35,30 @@ yarn build
 ```
 
 `TODO:` でファイル内を検索すると、このテンプレートを理容する際に変更が必要な箇所が出てきます。
+
+## 技術構成
+
+- Next.js
+- TypeScript
+- CSS Modules
+- react-modal
+
+JavaScript によるアニメーション等は入れておらず、シンプルな構成としています。
+
+## ページ構成
+
+- Header
+- Top
+- About
+- Hair Catalog
+  - Hair Catalog 子ページ
+- Menu
+- Staff
+- Access
+- Footer
+- ReserveButton
+
+予約ボタンを設置していますが、リンク先は未設定（当ページを別タブで開く）となっています。実際に利用したいサービスに合わせてリンク先を設定してください。
 
 ## microCMS 構成
 
