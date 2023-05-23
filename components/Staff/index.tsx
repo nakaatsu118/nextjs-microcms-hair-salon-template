@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Home.module.css';
+import styles from './Staff.module.css';
 import { StaffType } from '~/types/staff';
 
 export interface StaffProps {

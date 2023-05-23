@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Home.module.css';
+import styles from './HairCatalog.module.css';
 import { HairCatalogType } from '~/types/hairCatalog';
 import dayjs from 'dayjs';
 import Modal from 'react-modal';

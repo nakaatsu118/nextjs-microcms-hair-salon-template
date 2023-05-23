@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Home.module.css';
+import styles from './Menu.module.css';
 import { MenuType } from '~/types/menu';
 
 export interface MenuProps {

@@ -1,9 +1,9 @@
 import { GetStaticProps } from 'next';
 import { HairCatalogType } from '~/types/hairCatalog';
 import { client } from '~/utils/microCMSClient';
-import styles from './Home.module.css';
+import styles from './hairCatalog.module.css';
 import homeStyles from '~/styles/Home.module.css';
-import hairCatalogStyles from '~/components/HairCatalog/Home.module.css';
+import hairCatalogStyles from '~/components/HairCatalog/HairCatalog.module.css';
 import Footer from '~/components/Footer';
 import Header from '~/components/Header';
 import ReserveButton from '~/components/ReserveButton';

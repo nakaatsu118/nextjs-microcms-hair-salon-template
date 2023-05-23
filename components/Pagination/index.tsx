@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import styles from './Home.module.css';
+import styles from './Pagination.module.css';
 
 interface Props {
   totalCount: number;
