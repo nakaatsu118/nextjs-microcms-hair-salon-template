@@ -1,40 +1,61 @@
 # Simple Hair Salon | microCMS テンプレート
 
-microCMS を使用した、美容室風サイトのテンプレートです。
-
-## プレビュー
-
 <img src="https://github.com/nakaatsu118/nextjs-microcms-hair-salon-template/assets/42927606/6228464d-7034-4fea-a104-60599211e17d" width="480px">
 
 [https://nextjs-microcms-hair-salon-template.vercel.app/](https://nextjs-microcms-hair-salon-template.vercel.app/)
 
-## 環境変数設定
+microCMS を使用した、美容室風サイトのテンプレートです。
 
-`.env.sample` ファイルをコピーして `.env.development.local` を作成し、以下の情報を入力してください。
+## 動作環境
 
-`NEXT_PUBLIC_SERVICE_DOMAIN=`
+Node.js v18 以上
 
-microCMS 管理画面の URL `https://xxx.microcms.io/` の `xxx` を設定してください。
+## 環境変数の設定
 
-`NEXT_PUBLIC_API_KEY=`
-
-microCMS 管理画面のサービス設定 -> API キー から GET 権限のある API キーをコピーして設定してください。
-
-## 開発手順
+ルート直下の.env.sample ファイルをコピーして.env ファイルを作成し、下記の情報を入力してください。
 
 ```shell
-# setup
-yarn install
-
-# run local
-yarn dev
-
-# build static page
-# /out
-yarn build
+NEXT_PUBLIC_API_KEY=xxxxxxxxxx
+NEXT_PUBLIC_SERVICE_DOMAIN==xxxxxxxxxx
 ```
 
-`TODO:` でファイル内を検索すると、このテンプレートを利用する際に変更が必要な箇所が出てきます。
+`NEXT_PUBLIC_API_KEY`
+microCMS 管理画面の「サービス設定 > API キー」から確認することができます。
+
+`NEXT_PUBLIC_SERVICE_DOMAIN`
+MICROCMS_SERVICE_DOMAIN
+microCMS 管理画面の URL（https://xxxxxxxx.microcms.io）の xxxxxxxx の部分です。
+
+## 開発の仕方
+
+1. パッケージのインストール
+
+```shell
+yarn install
+```
+
+2. 開発環境の起動
+
+```shell
+yarn dev
+```
+
+3. 開発環境へのアクセス
+
+[http://localhost:3000](http://localhost:3000)にアクセス
+
+4. 実装を進める
+
+`TODO:` でファイル内を検索すると、このテンプレートを利用して新たなサイトを構築する際に変更が必要な箇所が出てきます。
+
+### Vercel へのデプロイ
+
+[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)から簡単にデプロイが可能です。
+
+リポジトリを紐付け、環境変数を `Environment Variables` に登録しましょう。
+
+開発環境の構築手順は以上になります。お疲れ様でした。
+以下は当テンプレートの技術面やサイト構成の解説になります。
 
 ## 技術構成
 
