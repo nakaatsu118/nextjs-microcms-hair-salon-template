@@ -8,7 +8,7 @@ import Menu from '~/components/Menu';
 import ReserveButton from '~/components/ReserveButton';
 import Staff from '~/components/Staff';
 import Footer from '~/components/Footer';
-import { client } from '~/utils/microCMSClient';
+import client from '~/utils/microCMSClient';
 import { MenuType } from '~/types/menu';
 import { StaffType } from '~/types/staff';
 import { HairCatalogType } from '~/types/hairCatalog';
@@ -43,6 +43,13 @@ const Home = ({ menu, staff, hairCatalog }: Props) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
+  // .envファイル未設定の場合nullを返す
+  if (client == null) {
+    return {
+      props: {},
+    };
+  }
+
   const menuData = await client.get({ endpoint: 'menu' });
   const staffData = await client.get({ endpoint: 'staff' });
   const hairCatalogData = await client.get({ endpoint: 'hair-catalog', queries: { limit: 4, orders: '-date' } });

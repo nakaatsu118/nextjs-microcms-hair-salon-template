@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next';
 import { HairCatalogType } from '~/types/hairCatalog';
-import { client } from '~/utils/microCMSClient';
+import client from '~/utils/microCMSClient';
 import styles from './hairCatalog.module.css';
 import homeStyles from '~/styles/Home.module.css';
 import hairCatalogStyles from '~/components/HairCatalog/HairCatalog.module.css';
@@ -65,27 +65,29 @@ const Home = ({ data, totalCount }: Props) => {
             </p>
           </div>
           <div className={styles.bottomSection}>
-            <Pagination totalCount={totalCount} path="hairCatalog" perPage={PER_PAGE} />
+            {data && <Pagination totalCount={totalCount} path="hairCatalog" perPage={PER_PAGE} />}
             <div className={hairCatalogStyles.hairCatalogImages}>
               {data ? (
-                data.map((hairCatalog) => (
-                  <div
-                    className={hairCatalogStyles.imageContainer}
-                    key={hairCatalog.id}
-                    onClick={() => openModal(hairCatalog)}
-                  >
-                    <img src={hairCatalog.image.url} alt={hairCatalog.hairStyle} />
-                    <p className={hairCatalogStyles.hairDescription}>
-                      <span className={hairCatalogStyles.date}>{dayjs(hairCatalog.date).format('YYYY.MM.DD')}</span>
-                      <span className={hairCatalogStyles.name}>{hairCatalog.hairStyle}</span>
-                    </p>
-                  </div>
-                ))
+                <>
+                  {data.map((hairCatalog) => (
+                    <div
+                      className={hairCatalogStyles.imageContainer}
+                      key={hairCatalog.id}
+                      onClick={() => openModal(hairCatalog)}
+                    >
+                      <img src={hairCatalog.image.url} alt={hairCatalog.hairStyle} />
+                      <p className={hairCatalogStyles.hairDescription}>
+                        <span className={hairCatalogStyles.date}>{dayjs(hairCatalog.date).format('YYYY.MM.DD')}</span>
+                        <span className={hairCatalogStyles.name}>{hairCatalog.hairStyle}</span>
+                      </p>
+                    </div>
+                  ))}
+                </>
               ) : (
                 <>no hairCatalog</>
               )}
             </div>
-            <Pagination totalCount={totalCount} path="hairCatalog" perPage={PER_PAGE} />
+            {data && <Pagination totalCount={totalCount} path="hairCatalog" perPage={PER_PAGE} />}
           </div>
           <Modal isOpen={modalIsOpen} style={customStyles} onRequestClose={closeModal} closeTimeoutMS={200}>
             {selectHairCatalog && (
@@ -113,6 +115,14 @@ const Home = ({ data, totalCount }: Props) => {
 export default Home;
 
 export const getStaticPaths = async () => {
+  // .envファイル未設定の場合空を返す
+  if (client == null) {
+    return {
+      paths: [],
+      fallback: false,
+    };
+  }
+
   const repos = await client.get({ endpoint: 'hair-catalog' });
   const range = (start: number, end: number) => [...Array(end - start + 1)].map((_, i) => start + i);
   const paths = range(1, Math.ceil(repos.totalCount / PER_PAGE)).map((repo) => `/hairCatalog/${repo}`);
@@ -121,6 +131,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
+  // .envファイル未設定の場合nullを返す
+  if (client == null) {
+    return {
+      props: {},
+    };
+  }
+
   const id = context.params ? context.params.id : '';
   const data = await client.get({
     endpoint: 'hair-catalog',

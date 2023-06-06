@@ -32,13 +32,14 @@ const Meta = ({
       <meta property="og:image" content={ogImage} />
       <meta property="og:locale" content="ja_JP" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@hoge" />
+      <meta name="twitter:creator" content="@nakaatsu" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="viewport" content="width=device-width" />
       <meta name="format-detection" content="telephone=no" />
+      {/* TODO: サイトに合わせたテーマカラーを設定 */}
       <meta name="theme-color" content="#b2a4ff" />
       {/* noIndex === true の場合のみ noindex 有効化 */}
       {noIndex && <meta name="robots" content="noindex" />}
