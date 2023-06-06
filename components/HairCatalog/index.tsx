@@ -77,9 +77,9 @@ export default function HairCatalog({ hairCatalog }: HairCatalogProps) {
           )}
         </Modal>
         {hairCatalog ? (
-          <div className={styles.andMore}>
-            <Link href="/hairCatalog/1/">AND MORE</Link>
-          </div>
+          <Link href="/hairCatalog/1/" passHref>
+            <div className={styles.andMore}>AND MORE</div>
+          </Link>
         ) : (
           <></>
         )}
