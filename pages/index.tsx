@@ -50,8 +50,8 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   }
 
-  const menuData = await client.get({ endpoint: 'menu' });
-  const staffData = await client.get({ endpoint: 'staff' });
+  const menuData = await client.get({ endpoint: 'menu', queries: { limit: 20 } });
+  const staffData = await client.get({ endpoint: 'staff', queries: { limit: 10 } });
   const hairCatalogData = await client.get({ endpoint: 'hair-catalog', queries: { limit: 4, orders: '-date' } });
 
   return {
